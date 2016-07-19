@@ -1,0 +1,117 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body {
+  width: 80%;
+  margin: auto;
+	color: #2a2a2a;
+	font-family: Arial,sans-serif;
+  font-size: 18px;
+}
+
+#logo {
+  text-shadow:1px 1px 1px rgba(255,13,13,1);
+  font-weight:bold;color:#ff5757;
+  letter-spacing:8pt;
+  word-spacing:11pt;
+  font-size:40px;
+  text-align:left;
+  font-family:arial, helvetica, sans-serif;
+  line-height:2;
+}
+
+#edit_mode_option {
+	padding: 3px 20px;
+	clear: both;
+	font-weight: normal;
+	line-height: 1.42857143;
+	color: #333333;
+	white-space: nowrap;
+}
+
+.edit {
+  padding-left: 20px;
+  padding-right: 5px;
+}
+.grip {
+  background-color: hsl(53, 19%, 22%);
+  height: 5rem;
+  float:left;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  width: 15%;
+}
+
+.grip_top {
+  margin-top: -10px;
+  background-color: hsl(53, 19%, 22%);
+  height: 7rem;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  width: 1%;
+  margin-bottom: 50px;
+  float: left;
+}
+
+.blade {
+  background-color: #e6532b;
+  box-shadow: 0 0 0.1rem 0.3rem rgba(203, 98, 98, 0.7);
+  height: 5rem;
+  width: 85%;
+  margin-left: 15%;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+.nav-tabs > li.active > a {
+  color: white;
+  font-size: 2rem;
+  background-color: hsla(0, 100%, 67%, 1);
+  border: 0px solid #ddd;
+}
+.nav-tabs > li > a {
+  color: white;
+  font-size: 2rem;
+  margin-right: 0px;
+  line-height: 1.42857143;
+  border: 0px solid transparent;
+  border-radius: 0px 0px 0 0;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+  background-color: #e6532b;
+  border: 0px solid #ddd;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+  background-color: #e6532b;
+  border: 0px solid #ddd;
+  color: yellow;
+  text-shadow:5px 5px 5px rgba(255,13,13,1);
+}
+.content {
+  width: 95%;
+  margin: auto;
+  clear: left;
+}
+.nav-tabs {
+	border-bottom: 0px solid #ddd;
+}
+
+.nav .open > a {
+  background-color: #e6532b;
+  border-color: #337ab7;
+}
+
+.nav .open > a:focus {
+  background-color: #e6532b;
+  border-color: #337ab7;
+}
+
+.dropdown-menu {
+  margin-left: 148px;
+}

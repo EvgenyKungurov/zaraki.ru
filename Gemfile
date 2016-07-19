@@ -17,6 +17,14 @@ gem 'coffee-rails', '~> 4.2'
 gem 'devise'
 # Use Bootstrap for UI CSS
 gem 'bootstrap-sass'
+# Use PostgreSQL database
+gem 'pg'
+# Use Ckeditor text editor
+gem 'ckeditor', github: 'galetahub/ckeditor'
+# Use Paperclip for file upload
+gem 'paperclip'
+# Use Kaminari for pagination
+gem 'kaminari'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 

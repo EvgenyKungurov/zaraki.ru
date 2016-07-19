@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <h3><strong><center><%= @post.title.html_safe %></center></strong></h3>
+</p>
+
+<p>
+  <%= @post.content.html_safe %>
+</p>
+
+<p>
+  <strong>Posted by user:</strong>
+  <%= @post.user.email %>
+</p>
+
+<% if can_do_it? %>
+  <%= link_to 'Edit', edit_post_path(@post) %> |
+<% end %>
+
+<%= link_to 'Back', posts_path(type: @post.post_type) %>

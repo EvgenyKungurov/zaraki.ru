@@ -1,0 +1,33 @@
+<%= link_to "zaraki.ru", root_path, id: "logo" %>
+<div class='sword'>
+  <div class='grip'></div>
+  <div class='grip_top'></div>
+  <div class='blade'>
+    <ul class="nav nav-tabs">
+      <li role="presentation"><%= link_to "Cheat Sheet", posts_path(type: 1) %></a></li>
+      <li role="presentation"><%= link_to "Posts", posts_path(type: 0) %></li>
+      <li role="presentation"><a href="#">About Me</a></li>
+      <ul class="nav nav-tabs pull-right">
+        <li role="dropdown">
+          <% if current_user %>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><%= current_user.email %><span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <% if can_do_it? %>
+                    <p id="edit_mode_option">Edit mode <%= check_box_tag 'edit_mode', 'edit_mode', true %></p>
+                  <% else %>
+                    <p id="edit_mode_option">Edit mode <%= check_box_tag 'edit_mode', 'edit_mode' %></p>
+                  <% end %>
+                </li>
+                <li><a href="#">Профиль</a></li>
+                <li role="separator" class="divider"></li>
+                <li><%= link_to "Выход", sign_out_path %></li>
+              </ul>
+           <% else %>
+            <li><%= link_to "Вход", sign_in_path %></li>
+           <% end %>
+        </li>
+      </ul>
+    </ul>
+  </div>
+</div>
