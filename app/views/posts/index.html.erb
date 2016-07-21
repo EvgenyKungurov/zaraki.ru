@@ -18,4 +18,6 @@
 
 <br>
 <%= paginate @posts %>
-<%= link_to 'New Post', new_post_path %>
+<% if can_do_it? %>
+  <%= link_to 'New Post', new_post_path %>
+<% end %>
