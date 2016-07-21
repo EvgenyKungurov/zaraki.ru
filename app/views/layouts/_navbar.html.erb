@@ -6,7 +6,7 @@
     <ul class="nav nav-tabs">
       <li role="presentation"><%= link_to "Cheat Sheet", posts_path(type: 1) %></a></li>
       <li role="presentation"><%= link_to "Posts", posts_path(type: 0) %></li>
-      <li role="presentation"><a href="#">About Me</a></li>
+      <li role="presentation"><%= link_to "Posts", posts_path(1) %></li>
       <ul class="nav nav-tabs pull-right">
         <li role="dropdown">
           <% if current_user %>

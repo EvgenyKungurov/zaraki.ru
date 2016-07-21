@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Post.new(
+  title: 'About Me',
+  content: "Hello! My name is Evgeny Kungurov. I'am from Russia :)"
+).save(validate: false)
