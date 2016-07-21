@@ -10,7 +10,7 @@
 
 <p>
   <strong>Posted by user:</strong>
-  <%= @post.user.email %>
+  <%= @post.user&.email || "Evgeny Kungurov" %>
 </p>
 
 <% if can_do_it? %>
