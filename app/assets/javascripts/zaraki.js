@@ -15,12 +15,10 @@ function check_edit_mode() {
 }
 
 function disable_edit_mode() {
-  document.cookie = 'edit_mode' + '=;expires=Thu, 01 Jan 1970 00:00:01 GMT;';
   document.cookie = 'edit_mode = false; path: /';
 }
 
 function enable_edit_mode() {
-  document.cookie = 'edit_mode' + '=;expires=Thu, 01 Jan 1970 00:00:01 GMT;';
   document.cookie = 'edit_mode = true; path: /';
 }
 
